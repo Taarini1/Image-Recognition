@@ -1,0 +1,33 @@
+body{
+background:linear-gradient(#fa0594,#b25bf0,#840bdb);
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    font-weight: 900;
+    color:rgb(42, 0, 139);
+    background-color: #ae00ff;
+    width:fit-content;
+}
+
+
+#camera{
+    border: 5px dashed rebeccapurple;
+    width: 450px;
+    height:400px;
+}
+
+#result{
+    border: 5px dotted rgb(150, 51, 153);
+    width: 450px;
+    height:400px;
+}
+
+#object{
+    color:#f53b0c;
+}
+
+#accuracy{
+    color:#08d8c7;
+}
