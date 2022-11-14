@@ -21,5 +21,23 @@ classifier=ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/K
 
 
 function modelLoaded(){
-    console.log("model loaded")
+    console.log("model loaded");
 }
+
+function identify_snapshot(){
+image = document.getElementById("webcam");
+classifier.classify(image,gotResult)
+
+}
+ function gotResult(error,result){
+if(error){
+    console.log(error);
+}
+else{
+console.log(result);
+document.getElementById("object").innerHTML=result[0].label;
+document.getElementById("accuracy").innerHTML=result[0].confidence.toFixed(2);
+
+}
+ }
+ 
